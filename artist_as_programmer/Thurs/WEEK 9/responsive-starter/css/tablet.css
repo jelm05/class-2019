@@ -1,0 +1,32 @@
+/*** SAMPLE DIRECTORY
+
+1. TABLETS PORTRAIT AND LANDSCAPE / 768px - 1024px WIDE
+2. TABLETS LANDSCAPE / 768px - 1024px WIDE
+3. TABLETS LANDSCAPE / 768px - 1024px WIDE and PIXEL RATIO 2
+4. TABLETS PORTRAIT / 768px - 1024px WIDE and PIXEL RATIO 2
+
+***/
+
+/* === 1. TABLETS PORTRAIT AND LANDSCAPE / 768px - 1024px WIDE === */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+/* === 2. TABLETS LANDSCAPE / 768px - 1024px WIDE === */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* === 3. TABLETS LANDSCAPE / 768px - 1024px WIDE and PIXEL RATIO 2 === */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+  /** DONT ACTUALLY NEED THIS FOR THIS DEMO, JUST USEFUL INFO **/
+
+}
+
+/* === 4. TABLETS PORTRAIT / 768px - 1024px WIDE and PIXEL RATIO 2 === */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+  /** DONT ACTUALLY NEED THIS FOR THIS DEMO, JUST USEFUL INFO **/
+
+}
