@@ -1,0 +1,30 @@
+/***  SAMPLE DIRECTORY
+
+1. SMARTPHONES PORTRAIT AND LANDSCAPE / 320px - 480px WIDE
+2. SMARTPHONES LANDSCAPE / 321px - 736px WIDE
+3. IPHONE 6 LANDSCAPE / 375px WIDE - 667px HEIGHT and PIXEL RATIO 2
+4. IPHONE 6+ LANDSCAPE / 414px WIDE - 736px HEIGHT and PIXEL RATIO 2
+
+***/
+
+/* === 1. SMARTPHONES PORTRAIT AND LANDSCAPE / 320px - 480px WIDE === */
+
+/* === 1. SMARTPHONES PORTRAIT AND LANDSCAPE / 320px - 480px WIDE === */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+
+/* === 2. SMARTPHONES LANDSCAPE / 321px - 735px WIDE === */
+@media only screen and (min-width : 321px) and (max-device-width : 568px) and (orientation : landscape) {
+
+}
+
+/* === 3. IPHONE 6 LANDSCAPE / 569px WIDE - 667px HEIGHT and PIXEL RATIO 2 === */
+@media only screen and (min-device-width: 667px) and (max-device-width: 735px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+/* === 4. IPHONE 6+ LANDSCAPE / 667px WIDE - 736px HEIGHT and PIXEL RATIO 2 === */
+@media only screen and (min-device-width: 736px) and (max-device-width: 811px) and (orientation : landscape) /* and (-webkit-device-pixel-ratio: 2) */ {
+
+}
