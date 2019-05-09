@@ -1,0 +1,119 @@
+
+@font-face {
+  font-family: tron;
+  src: url(../assets/fonts/tron/TRON.TTF);
+}
+
+@font-face {
+  font-family: vcr;
+  src: url(../assets/fonts/vcr/vcr_mono.TTF);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+#game, #canvas {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+div#rules,
+div#game-over {
+  display: table;
+  width: 800px;
+  height: 400px;
+  padding: 15px;
+  color: yellow;
+  background-color: black;
+  text-align: center;
+}
+
+div#start,
+div#restart,
+div#rules h1,
+div#game-over h1 {
+  width: 800px;
+  margin: 20px auto;
+  font-size: 2.8em;
+  font-family: tron;
+}
+
+div#rules h1 {
+  border-bottom: 5px solid yellow;
+}
+
+div#rules ul {
+  width: 800px;
+}
+
+#game-over p,
+div#rules h2,
+div#rules li {
+  font-family: vcr;
+}
+
+div#rules h2,
+div#rules li {
+  line-height: 1.4em;
+  text-align: left;
+}
+
+#game-over p {
+  line-height: 1.4em;
+  text-align: center;
+}
+
+div#start,
+div#restart {
+  width: 50%;
+  padding: 20px;
+  margin-top: 80px;
+  border: 2px solid yellow;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.flash {
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: yellow;}
+    to {color: black;}
+}
+
+/* div#rules h1 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: tron;
+} */
