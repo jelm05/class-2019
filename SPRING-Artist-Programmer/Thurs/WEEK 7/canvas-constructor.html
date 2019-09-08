@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Constructor</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="canvas-constructor.js"></script>
+  </head>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <!-- Canvas tag we'll use as a target for our JS -->
+    <canvas id="canvas">
+      <!-- Not required, only renders when user has older browser -->
+      Your browser doesn't support HTML5 canvas.
+    </canvas>
+  </body>
+</html>
+
+
+var mouseX = 0,
+    mouseY = 0;
+
+   $(document).mousemove(function(e) {
+       mouseX = e.pageX;
+       mouseY = e.pageY;
+   });

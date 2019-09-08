@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Events</title>
+    <!-- Bringing in the jQuery library; Google and jQuery links are doing the same thing from different sources -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- This script tag allows us to write JavaScript directly in an HTML file -->
+    <!-- For anything other than a demo, we'd put this in an external file similar to jQuery-->
+    <script>
+      // Wait until the document is loaded and ready before running the nested JavaScript
+      $(function(){
+
+        /*
+        Find all of the divs with a class of box
+        Whenever a user clicks on the box, do something
+        Right now, that something is an alert that says it was clicked
+        */
+
+        // Listen for a user to click on a div with a class of box, then do something
+        $("div.box").click(function(){
+
+          // var that = $(this);
+          // console.log( that );
+
+
+          // The 'this' keyword means that we're only applying the background color change
+          // to the div we actually clicked on
+          $(this).css({
+            backgroundColor : "green"
+          });
+
+        // Similar to click, but we're listening for a hover event instead of click
+        }).hover(function(){
+
+          // If the user is hovering over a div with a class box, alert us
+          alert("hovering!");
+
+        });
+
+      });
+    </script>
+    <!-- This style tag allows to add CSS within an HTML file -->
+    <!-- For anything other than a demo, we'd put this in an external file -->
+    <style media="screen">
+
+    div.box {
+      width: 50px;
+      height: 50px;
+      border: 10px solid red;
+      background-color: #333;
+      margin: 5px;
+    }
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- a class you can use more than once -->
+    <!-- use ID only once -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+  </body>
+</html>

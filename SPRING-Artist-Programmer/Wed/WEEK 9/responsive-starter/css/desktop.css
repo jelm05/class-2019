@@ -1,0 +1,22 @@
+/***  SAMPLE DIRECTORY
+
+1. SMALL SCREEN / 850px - 1223px
+2. STANDARD DESKTOP SCREEN / 1224px - 1823px
+3. LARGE SCREENS / 1824px and up
+
+***/
+
+/* === 1. SMALL SCREEN / 850px - 1223px === */
+@media only screen and (min-device-width : 850px) and (max-device-width : 1223px) {
+
+}
+
+/* === 2. STANDARD DESKTOP SCREEN / 1224px - 1823px === */
+@media only screen and (min-device-width : 1224px) and (max-device-width : 1823px) {
+
+}
+
+/* === 3. LARGE SCREENS / 1824px and up === */
+@media only screen and (min-device-width : 1824px) {
+
+}

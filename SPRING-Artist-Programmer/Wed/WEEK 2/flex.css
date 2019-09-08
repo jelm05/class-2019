@@ -1,0 +1,25 @@
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  /* This applies to all children elements as well */
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+}
+
+.flex {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-color: tomato;
+
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+
+
+/*
+
+We're targetting all of divs with a class of red and applying the corresponding styles nested within the curly brackets
+If it was an ID, we would target the div with a pound sign
+
+.red = class
+#red = ID
+
+ */
+ 
+.red {
+  width: 200px;
+  height: 300px;
+  background-color: red;
+  border: 5px solid grey;
+}
+
+.blue {
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
