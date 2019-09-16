@@ -1,0 +1,56 @@
+body, html {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid blue;
+  /* padding: 25px; */
+}
+
+nav {
+  border: 1px solid red;
+}
+
+ul {
+  width: 100%;
+  border: 1px solid grey;
+  /* Everything inside our UL should be centered */
+  /* Line 21 will work in conjunction with the display: inline-block of li */
+  text-align: center;
+}
+
+li.nav-item {
+  width: 150px;
+  height: 75px;
+  background-color: #333;
+  /* Essentially means display in a horizontal line */
+  display: inline-block;
+  cursor: pointer;
+}
+
+li.nav-item a {
+  color: white;
+}
+
+li.nav-item a:hover {
+  color: red;
+}
+
+section {
+  width: 80%;
+  padding: 25px;
+  /* margin: top/bottom right/left */
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  min-height: 100px;
+  padding: 25px;
+  border: 1px solid green;
+}

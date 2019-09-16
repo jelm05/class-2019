@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        let $box = $(".box");
+
+        $box.click(function(){
+          $box.animate({
+            left: "400px",
+            opacity: 0.5
+          });
+        });
+
+      });
+    </script>
+    <style>
+      div.box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

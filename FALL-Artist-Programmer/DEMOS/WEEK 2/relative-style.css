@@ -1,0 +1,10 @@
+.box {
+  position: relative;
+  height: 100px;
+  width: 50px;
+  float: right;
+  background-color: red;
+  color: white;
+  border: 1px dashed black;
+  margin: 15px;
+}

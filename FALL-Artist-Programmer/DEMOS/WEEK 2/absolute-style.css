@@ -1,0 +1,40 @@
+/* # sign denotes an ID */
+/* . sign denotes a CLASS */
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+div#red {
+  background-color: red;
+  right: 0px;
+  bottom: 0px;
+}
+
+#green {
+  background-color: green;
+  left: 400px;
+  top: 100px;
+}
+
+#blue {
+  background-color: blue;
+  right: 700px;
+  bottom: 500px;
+}
+
+#orange {
+  background-color: orange;
+  top: 0px;
+  left: 100px;
+}
+
+#purple {
+  background-color: purple;
+  left: 100px;
+  top: 1000px;
+}
