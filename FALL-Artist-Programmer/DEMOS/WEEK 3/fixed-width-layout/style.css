@@ -1,0 +1,43 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+IDs use #
+Classes use .
+*/
+
+section#primary-container {
+  width: 1200px;
+  /* 0 = top/bottom, auto = left/right */
+  /* This line centers our container */
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === VERTICAL SMARTPHONE STYLES / 320PX x 480PX === */
+@media only screen and (min-width: 320px) and (max-device-width: 480px) {
+  section#primary-container {
+    width: 480px;
+    background-color: green;
+  }
+}
+
+/* === LANDSCAPE SMARTPHONE STYLES / 321PX 568PX === */
+@media only screen and (min-width: 321px) and (max-device-width: 568px) and (orientation: landscape) {
+  .hidden {
+    display: block;
+    background-color: red;
+  }
+
+  .mobile-landscape {
+      font-family: Helvetica;
+      font-size: 36px;
+  }
+}
