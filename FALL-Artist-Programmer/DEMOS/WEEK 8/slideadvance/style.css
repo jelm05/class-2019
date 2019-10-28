@@ -1,0 +1,42 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+section#slider-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  overflow: hidden;
+}
+
+div#slider {
+  width: 10000px;
+  overflow: hidden;
+}
+
+.slide {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide img {
+  max-width: 100vw;
+  width: 100vw;
+}
+
+button {
+  position: fixed;
+  z-index: 100;
+}
+
+#left {
+  top: 10px;
+  left: 10px;
+}
+
+#right {
+  top: 10px;
+  right: 10px;
+}
