@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keys Demo</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+      div.box {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+
+      #a{
+        background-color: red;
+      }
+
+      #b {
+        background-color: blue;
+        top: 200px;
+        left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="a" class="box"></div>
+    <div id="b" class="box"></div>
+
+    <script>
+      $(function(){
+        let $aBox = $('#a');
+        let $bBox = $('#b');
+
+        $(document).mousemove(function(event){
+            // console.log("x: ", event.pageX);
+            // console.log("y: ", event.pageY);
+
+            // This only works because the $aBox
+            // is positioned absolutely
+            $aBox.css({
+              left : event.pageX,
+              top : event.pageY
+            });
+
+            if( collisionTest($aBox, $bBox) ) {
+              $bBox.css({opacity : 0.5});
+              alert("you lost the game!")
+            }
+
+        });
+
+        function collisionTest(a, b) {
+          // Exit if a is invisible
+          if (a.css("display") == "none") return;
+
+          let aPos = a.position();
+          let bPos = b.position();
+
+          let aLeft = aPos.left;
+          let aRight = aPos.left + a.width();
+          let aTop = aPos.top;
+          let aBottom = aPos.top + a.height();
+
+          let bLeft = bPos.left;
+          let bRight = bPos.left + b.width();
+          let bTop = bPos.top;
+          let bBottom = bPos.top + b.height();
+
+          return !(
+            bLeft > aRight ||
+            bRight < aLeft ||
+            bTop > aBottom ||
+            bBottom < aTop
+          );
+
+        }
+
+      });
+    </script>
+  </body>
+</html>

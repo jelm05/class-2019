@@ -1,0 +1,63 @@
+@font-face {
+  font-family: great-vibes;
+  src: url(../fonts/great-vibes/GreatVibes-Regular.otf)
+}
+
+header, footer {
+  position: fixed;
+  width: 100%;
+  min-height: 50px;
+  background-color: grey;
+}
+
+header {
+  top: 0;
+}
+
+#global-container,
+#header-video {
+  width: 100%;
+}
+
+#header-video video {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  min-height: 100%;
+  width: 100%;
+}
+
+.parallax {
+  height: 600px;
+  border: 1px solid red;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax p {
+  padding: 25px;
+  font-size: 3em;
+  font-family: great-vibes;
+}
+
+#one {
+  background-image: url(../images/one.jpg)
+}
+
+#two {
+  background-image: url(../images/two.jpg)
+}
+
+#three {
+  background-image: url(../images/three.jpg)
+}
+
+#four {
+  background-image: url(../images/four.jpg)
+}
+
+footer {
+  bottom: 0;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keys Demo</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <p>Look at the console to view the keycode.</p>
+
+    <script>
+      $(function(){
+        console.log("document ready");
+
+        $(document).keyup(function(event){
+          console.log("keycode: ", event.which);
+
+          if( event.which === 38) {
+            alert("up button pressed");
+            // code to advance an image slider
+          }
+
+        });
+
+      });
+    </script>
+  </body>
+</html>
